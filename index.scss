@@ -105,6 +105,20 @@ body {
       }
     }
   }
+
+  &__company {
+    margin-top: 5rem;
+
+    &__info {
+      width: 50%;
+
+      table {
+        td:first-child {
+          padding: 1rem 1rem 1rem 0;
+        }
+      }
+    }
+  }
 }
 
 .globalFooter {
@@ -178,6 +192,27 @@ body {
   .info__mission__title {
     width: 100%;
     margin-top: 2rem;
+  }
+
+  .info__members__list {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .info__company__info {
+    width: 100%;
+    margin-top: 2rem;
+
+    table {
+      position: relative;
+      td {
+        padding: .5rem;
+      }
+      td:first-child {
+        padding: .5rem .5rem .5rem 0;
+        width: 5rem;
+      }
+    }
   }
 }
 
