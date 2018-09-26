@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&subset=japanese");
+
+@import "./node_modules/sanitize.css/sanitize";
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.globalHeader {
+  padding: 1rem 0;
+  &__logo {
+    font-size: 1.2rem;
+    font-weight: black;
+  }
+}
+
+.hero {
+  height: 30rem;
+  margin-bottom: 5rem;
+
+  .container {
+    position: relative;
+  }
+
+  &__phrase {
+    font-size: 2rem;
+    line-height: 1.6;
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    margin-top: 5rem;
+
+    span {
+      font-size: .9rem;
+      margin-top: 1rem;
+      display: block;
+      color: rgb(92, 92, 92);
+    }
+  }
+}
+
+.info {
+  transform: translateY(-10rem);
+  background-color: #fff;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.04);
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+
+  p {
+    position: relative;
+  }
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__mission {
+    &__heading {
+      font-size: 2rem;
+      font-weight: 400;
+      margin: 0;
+      letter-spacing: .3rem;
+
+      span {
+        font-size: .8rem;
+      }
+    }
+
+    &__title {
+      margin: 0;
+      width: 50%;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+  }
+
+  &__members {
+    margin-top: 5rem;
+
+    &__list {
+      width: 50%;
+
+      &__item {
+        margin-bottom: 2rem;
+
+        &__title {
+          margin: 0;
+          font-size: .9rem;
+          margin-bottom: .5rem;
+        }
+
+        &__name {
+          margin: 0;
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+}
+
+.globalFooter {
+}
+
+.s-lines, .s-lines .line {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+}
+
+.s-lines {
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.s-lines .line {
+  width: 1px;
+  background: #f5f5f5;
+}
+
+.s-lines .line._1 {
+  left: 3rem;
+}
+
+.s-lines .line._2 {
+  left: calc(25% + 1.5rem);
+}
+
+.s-lines .line._3 {
+  left: 50%;
+  margin-left: -1px;
+}
+
+.s-lines .line._4 {
+  right: calc(25% + 1.5rem);
+}
+
+.s-lines .line._5 {
+  right: 3rem;
+}
+
+
+@media (max-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding: 0 2rem;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  .hero {
+    &__phrase {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .info__section {
+    display: block;
+  }
+
+  .info__mission__title {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
+

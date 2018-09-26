@@ -1,0 +1,14 @@
+{
+  "name": "BlockBase",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "parcel-bundler": "^1.10.0",
+    "particles.js": "^2.0.0",
+    "sanitize.css": "^7.0.3"
+  },
+  "devDependencies": {
+    "sass": "^1.14.0"
+  }
+}
