@@ -9,6 +9,7 @@
     "sanitize.css": "^7.0.3"
   },
   "devDependencies": {
+    "autoprefixer": "^9.1.5",
     "sass": "^1.14.0"
   }
 }
