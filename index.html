@@ -29,10 +29,46 @@
 </head>
 <body>
   <main>
+    <div class="drawerLayer" id="drawerLayer"></div>
     <header class="globalHeader">
       <div class="container">
         <h1 class="globalHeader__logo">BlockBase, Inc.</h1>
+        <div class="globalHeader__navigation">
+          <nav>
+            <ul>
+              <a href="#MISSION"><li>MISSION</li></a>
+              <a href="#BUSINESS"><li>BUSINESS</li></a>
+              <a href="#NEWS"><li>NEWS</li></a>
+              <a href="#SERVICES"><li>SERVICES</li></a>
+              <a href="#MEMBERS"><li>MEMBERS</li></a>
+              <a href="#COMPANY"><li>COMPANY</li></a>
+            </ul>
+          </nav>
+        </div>
       </div>
+      <button type="button" class="drawerButton" id="drawerButton">
+        <span class="drawerButton__icon"></span>
+      </button>
+      <ul class="drawer" id="drawer">
+        <a href="#MISSION">
+          <li class="drawer__menu">MISSION</li>
+        </a>
+        <a href="#BUSINESS">
+          <li class="drawer__menu">BUSINESS</li>
+        </a>
+        <a href="#NEWS">
+          <li class="drawer__menu">NEWS</li>
+        </a>
+        <a href="#SERVICES">
+          <li class="drawer__menu">SERVICES</li>
+        </a>
+        <a href="#MEMBERS">
+          <li class="drawer__menu">MEMBERS</li>
+        </a>
+        <a href="#COMPANY">
+          <li class="drawer__menu">COMPANY</li>
+        </a>
+      </ul>
     </header>
     <div class="main">
       <div class="hero" id="particles-js">
@@ -54,7 +90,7 @@
             <div class="line _4"></div>
             <div class="line _5"></div>
           </div>
-          <div class="info__mission info__section">
+          <div class="info__mission info__section" id="MISSION">
             <p class="info__mission__heading">
               MISSION <br>
               <span>企業理念</span>
@@ -66,18 +102,77 @@
             </p>
           </div>
 
-          <div class="info__members info__section">
+          <div class="info__members info__section" id="BUSINESS">
             <p class="info__mission__heading">
               BUSINESS <br>
               <span>事業内容</span>
             </p>
             <p class="info__mission__title">
                 ブロックチェーン関連技術のコンサルティング業務<br>
-                ブロックチェーン関連技術を活用したプロダクトの企画・開発                
+                ブロックチェーン関連技術を活用したプロダクトの企画・開発
             </p>
-          </div>          
+          </div>
 
-          <div class="info__members info__section">
+          <div class="info__members info__section" id="NEWS">
+            <p class="info__mission__heading">
+              NEWS <br>
+              <span>ニュース</span>
+            </p>
+            <div class="info__news__list">
+              <div class="info__news__list__item">
+                <p class="info__news__list__item__datetime">2018.11.22</p>
+                <a href="https://thebridge.jp/2018/11/blockbase" target="_blank" class="info__news__list__item__title">ブロックチェーンコンサルのBlockBaseがOrigin Protocolと提携、ERC-725の開発効率最大化目指す</a>
+              </div>
+              <div class="info__news__list__item">
+                <p class="info__news__list__item__datetime">2018.11.22</p>
+                <a href="https://thebridge.jp/2018/11/blockbase" target="_blank" class="info__news__list__item__title">ブロックチェーンコンサルのBlockBaseがOrigin Protocolと提携、ERC-725の開発効率最大化目指す</a>
+              </div>
+              <div class="info__news__list__item">
+                <p class="info__news__list__item__datetime">2018.11.22</p>
+                <a href="https://thebridge.jp/2018/11/blockbase" target="_blank" class="info__news__list__item__title">ブロックチェーンコンサルのBlockBaseがOrigin Protocolと提携、ERC-725の開発効率最大化目指す</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="info__services info__section" id="SERVICES">
+            <p class="info__mission__heading">
+              SERVICES <br>
+              <span>サービス</span>
+            </p>
+            <div class="info__services__wrap">
+              <div class="info__services__list">
+                <a href="https://bazaaar.io/">
+                  <div class="info__services__list__item">
+                    <img src="./assets/bazaaar.jpg" alt="">
+                    <div class="info__services__list__item__info">
+                      <p class="info__services__list__item__title">bazaar.io</p>
+                      <p class="info__services__list__item__description">ブロックチェーンをつかったNTFのマッチングプラットフォーム</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://bazaaar.io/">
+                  <div class="info__services__list__item">
+                    <img src="./assets/bazaaar.jpg" alt="">
+                    <div class="info__services__list__item__info">
+                      <p class="info__services__list__item__title">bazaar.io</p>
+                      <p class="info__services__list__item__description">ブロックチェーンをつかったNTFのマッチングプラットフォーム</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="https://bazaaar.io/">
+                  <div class="info__services__list__item">
+                    <img src="./assets/bazaaar.jpg" alt="">
+                    <div class="info__services__list__item__info">
+                      <p class="info__services__list__item__title">bazaar.io</p>
+                      <p class="info__services__list__item__description">ブロックチェーンをつかったNTFのマッチングプラットフォーム</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="info__members info__section" id="MEMBERS">
             <p class="info__mission__heading">
               MEMBERS <br>
               <span>メンバー</span>
@@ -101,7 +196,7 @@
                 </div>
             </div>
           </div>
-          <div class="info__company info__section">
+          <div class="info__company info__section" id="COMPANY">
             <p class="info__mission__heading">
               COMPANY <br>
               <span>会社情報</span>
