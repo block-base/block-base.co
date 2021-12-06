@@ -468,3 +468,20 @@ body {
 .drawer--open .drawerLayer {
   display: block;
 }
+
+footer {
+  background-color: #222;
+  text-align: center;
+  height: 150px;
+}
+
+.fa {
+  margin-top: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.twitter :hover {
+  cursor: pointer;
+  color: darkgrey;
+}
